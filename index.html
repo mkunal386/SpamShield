@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpamShield | Message Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="badge">ML-POWERED MESSAGE ANALYSIS</div>
+
+        <h1>SpamShield</h1>
+        <p class="subtitle">
+            Check whether a message looks like spam using machine learning.
+        </p>
+
+        <section class="panel">
+            <label for="message">Paste your message</label>
+            <textarea id="message" placeholder="Example: Congratulations! You won a free prize..."></textarea>
+
+            <div class="actions">
+                <button id="analyzeBtn">Analyze Message</button>
+                <button id="clearBtn" class="secondary">Clear</button>
+            </div>
+
+            <div id="result" class="result" aria-live="polite">
+                Your prediction will appear here.
+            </div>
+        </section>
+
+        <p class="note">
+            Educational demonstration. Predictions may be incorrect.
+        </p>
+    </main>
+
+    <script src="model-data.js"></script>
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
